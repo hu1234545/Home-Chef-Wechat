@@ -1,0 +1,29 @@
+<view class="wrapper">
+  <view class="hero">
+    <text class="hero-title">今天吃什么</text>
+  </view>
+  <view class="action">
+    <button class="btn" bindtap="onRandom">随机抽取 · 三菜一汤</button>
+  </view>
+
+  <view wx:if="{{result.others && result.others.length}}" class="result">
+    <text class="section-title">三菜</text>
+    <view class="list">
+      <block wx:for="{{result.others}}" wx:key="id">
+        <view class="card item" data-id="{{item.id}}" bindtap="onTapItem">
+          <image class="thumb" src="{{item.pic}}" mode="aspectFill"></image>
+          <view class="meta"><text class="name">{{item.name}}</text></view>
+        </view>
+      </block>
+    </view>
+    <text class="section-title">一汤</text>
+    <view class="list">
+      <block wx:for="{{result.soup}}" wx:key="id">
+        <view class="card item" data-id="{{item.id}}" bindtap="onTapItem">
+          <image class="thumb" src="{{item.pic}}" mode="aspectFill"></image>
+          <view class="meta"><text class="name">{{item.name}}</text></view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

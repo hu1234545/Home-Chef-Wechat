@@ -1,0 +1,29 @@
+<view class="wrapper">
+  <image class="cover" src="{{dish.pic}}" mode="aspectFill"></image>
+  <view class="content card">
+    <text class="name">{{dish.name}}</text>
+    <view class="tags">
+      <block wx:for="{{dish.tags}}" wx:key="*this">
+        <text class="tag">{{item}}</text>
+      </block>
+    </view>
+
+    <view class="section">
+      <text class="section-title">食材</text>
+      <view class="ing-list">
+        <block wx:for="{{ingredients}}" wx:key="*this">
+          <text class="ing">{{item}}</text>
+        </block>
+      </view>
+    </view>
+
+    <view class="section">
+      <text class="section-title">做法步骤</text>
+      <view class="steps">
+        <block wx:for="{{steps}}" wx:key="*this">
+          <text class="step">{{item}}</text>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

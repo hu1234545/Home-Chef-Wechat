@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/random/random"
+  ],
+  "window": {
+    "navigationBarTitleText": "家常菜菜单",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#7c2d12",
+    "selectedColor": "#f59e0b",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "菜单"
+      },
+      {
+        "pagePath": "pages/random/random",
+        "text": "随机"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/detail/detail"
+      ]
+    }
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

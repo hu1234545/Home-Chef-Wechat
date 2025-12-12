@@ -1,0 +1,33 @@
+<view class="wrapper">
+  <view class="hero">
+    <text class="hero-title">今日菜单 · 家常味道</text>
+  </view>
+
+  <view class="search">
+    <input class="search-input" placeholder="搜索菜名" bindinput="onSearchInput" value="{{query}}" />
+  </view>
+
+  <scroll-view class="tabs" scroll-x="true">
+    <view class="tabs-row">
+      <block wx:for="{{categories}}" wx:key="*this">
+        <view class="tab {{activeCategory===item?'tab-active':''}}" data-cat="{{item}}" bindtap="onTapCategory">{{item}}</view>
+      </block>
+    </view>
+  </scroll-view>
+
+  <view class="list">
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="card item" data-id="{{item.id}}" bindtap="onTapItem">
+        <image class="thumb" src="{{item.pic}}" mode="aspectFill"></image>
+        <view class="meta">
+          <text class="name">{{item.name}}</text>
+          <view class="tags">
+            <block wx:for="{{item.tags}}" wx:key="*this">
+              <text class="tag">{{item}}</text>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

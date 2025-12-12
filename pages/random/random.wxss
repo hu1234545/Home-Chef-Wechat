@@ -1,0 +1,11 @@
+.wrapper { padding: 24rpx; }
+.hero { background: #fffbeb; border-radius: 16rpx; padding: 24rpx; }
+.hero-title { color: #b45309; font-size: 32rpx; font-weight: 600; }
+.action { margin-top: 24rpx; display: flex; justify-content: center; }
+.result { margin-top: 24rpx; }
+.section-title { font-size: 28rpx; color: #b45309; font-weight: 600; }
+.list { margin-top: 16rpx; display: flex; flex-wrap: wrap; gap: 24rpx; }
+.item { width: calc(50% - 12rpx); overflow: hidden; }
+.thumb { width: 100%; height: 220rpx; background: #fff7ed; }
+.meta { padding: 16rpx; }
+.name { font-size: 28rpx; font-weight: 600; color: #111827; }

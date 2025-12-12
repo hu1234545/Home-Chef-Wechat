@@ -1,0 +1,23 @@
+page, view, text, image, button, input, scroll-view {
+  box-sizing: border-box;
+}
+
+.theme-amber {
+  color: #7c2d12;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 20rpx;
+  border-radius: 12rpx;
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.06);
+}
